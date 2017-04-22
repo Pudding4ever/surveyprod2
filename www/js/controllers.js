@@ -44,7 +44,7 @@ angular.module('bucketList.controllers', ['bucketList.services'])
     $scope.createUser = function () {
         console.log("create user called");
     	var email = this.user.email;
-        console.log ("this.user.email")
+        console.log (this.user.email);
         var password = this.user.password;
         var uName = this.user.name;
         if(!email || !password || !uName) {
