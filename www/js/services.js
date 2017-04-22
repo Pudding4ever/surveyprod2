@@ -12,7 +12,7 @@ angular.module('bucketList.services', [])
         };
 
         $rootScope.hide = function () {
-            $ionicLoading.hide();
+            $rootScope.loading.hide();
         };
 
         $rootScope.logout = function () {
