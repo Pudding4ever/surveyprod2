@@ -42,7 +42,9 @@ angular.module('bucketList.controllers', ['bucketList.services'])
     };
 
     $scope.createUser = function () {
+        console.log("create user called");
     	var email = this.user.email;
+        console.log ("this.user.email")
         var password = this.user.password;
         var uName = this.user.name;
         if(!email || !password || !uName) {
@@ -50,6 +52,8 @@ angular.module('bucketList.controllers', ['bucketList.services'])
         	return false;
         }
         $rootScope.show('Please wait.. Registering');
+        console.log("trying to sign you up");
+        console.log (email + uName + password);
         API.signup({
             email: email,
             password: password,
