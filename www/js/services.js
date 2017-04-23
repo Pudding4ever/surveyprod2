@@ -1,5 +1,3 @@
-var querystring = require('querystring');
-
 angular.module('bucketList.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
        var base = "http://surveytestcomp308.herokuapp.com";
@@ -12,6 +10,8 @@ angular.module('bucketList.services', [])
                 showDelay: 0
             });
         };
+
+var querystring = require('querystring');
 
         $rootScope.hide = function () {
             $rootScope.loading.hide();
