@@ -1,3 +1,5 @@
+var querystring = require('querystring');
+
 angular.module('bucketList.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
        var base = "http://surveytestcomp308.herokuapp.com";
@@ -55,7 +57,7 @@ angular.module('bucketList.services', [])
             signup: function (form) {
                 console.log("signup function called");
                 console.log (form);
-                return $http.post(base+'/api/v1/bucketList/auth/register', form);
+                return $http.post(base+'/api/v1/bucketList/auth/register', querystring.stringify(form));
             },
             getAll: function (email) {
                 return $http.get(base+'/api/v1/bucketList/data/list', {
