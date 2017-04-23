@@ -6,7 +6,6 @@
   "dependencies": {
     "cordova": "^6.5.0",
     "express": "~4.4.3",
-    "ionic": "^2.2.3",
-    "querystring": "^0.2.0"
+    "ionic": "^2.2.3"
   }
 }
