@@ -54,7 +54,7 @@ angular.module('bucketList.services', [])
             },
             signup: function (form) {
                 console.log("signup function called");
-                console.log ($http.post(base+'/api/v1/bucketList/auth/register', form));
+                console.log (form);
                 return $http.post(base+'/api/v1/bucketList/auth/register', form);
             },
             getAll: function (email) {
